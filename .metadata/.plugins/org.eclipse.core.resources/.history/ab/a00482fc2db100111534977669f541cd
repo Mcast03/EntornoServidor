@@ -1,0 +1,65 @@
+package mipaquete;
+
+public class Counter {
+	public int value;
+	public int maxValue;
+	public String model;
+
+	public Counter() {
+		this.value = 0;
+		this.maxValue = 100_000;
+		this.model = "N-COUNTER";
+	}
+
+	public Counter(int maximoValor) {
+		this.maxValue = maximoValor;
+	}
+
+	public Counter(int maximoValor, String modelo) {
+		this.maxValue = maximoValor;
+		this.model = modelo;
+	}
+
+	public void show() {
+		System.out.println("Contador: modelo (" + this.model + ") y valor " + this.value + " de " + this.maxValue);
+	}
+
+	public boolean increment() {
+		if (this.value < this.maxValue) {
+			this.value++;
+			return true;
+		}
+
+		else
+			return false;
+	}
+
+	public boolean increment(int n) {
+		if (this.value + n <= this.maxValue) {
+			this.value += n;
+			return true;
+		}
+
+		else {
+			this.value = this.maxValue;
+			return false;
+		}
+	}
+
+	public boolean reset() {
+		if (this.value == this.maxValue) {
+			this.value = 0;
+			return true;
+		}
+
+		else {
+			this.value = 0;
+			return false;
+		}
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
