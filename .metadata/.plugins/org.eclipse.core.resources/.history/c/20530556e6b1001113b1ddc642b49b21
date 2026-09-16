@@ -1,0 +1,10 @@
+package collections;
+
+public class Coche {
+	private Enum marca;
+	private Enum color;
+	
+	public Coche(Enum marca, Enum coche) {
+		
+	}
+}

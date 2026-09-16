@@ -1,0 +1,16 @@
+package herencia;
+
+public class Circulo extends Figura{
+	private double PI = 3.1415926535;
+	private int radio;
+	
+	
+	public Circulo(String color, int radio) {
+		super(color);
+		this.radio = radio;
+	}
+	
+	public double area() {
+		return PI*(radio*radio);
+	}
+}

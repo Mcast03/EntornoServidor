@@ -13,4 +13,15 @@ public class Circulo extends Figura{
 	public double area() {
 		return PI*(radio*radio);
 	}
+	
+	public double perimetro() {
+		return 2*PI*radio;
+	}
+
+	@Override
+	public String toString() {
+		return "Circulo [PI=" + PI + ", radio=" + radio + ", color=" + getColor() + "]";
+	}
+	
+	
 }
