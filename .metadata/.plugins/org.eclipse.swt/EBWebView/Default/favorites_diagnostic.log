@@ -116,3 +116,44 @@
 2026-09-16 15:38:33.074: [INFO] BookmarkModelLoaded, ids_reassigned: 0
 2026-09-16 15:38:33.074: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-09-16 15:38:33.074: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-16 16:01:54.449: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 16:39:17.500: [INFO] CurrentProfilePath: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 16:39:17.500: [INFO] Profiles total count: 1
+2026-09-17 16:39:17.500: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 16:39:17.500: [INFO] LastUsedProfileDir: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 16:39:17.500: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 16:39:17.500: [INFO] OnDoneLoading sync enabled: 0
+2026-09-17 16:39:17.500: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-17 16:39:17.500: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-17 16:39:17.500: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 16:41:10.571: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 16:51:17.187: [INFO] CurrentProfilePath: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 16:51:17.187: [INFO] Profiles total count: 1
+2026-09-17 16:51:17.187: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 16:51:17.187: [INFO] LastUsedProfileDir: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 16:51:17.187: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 16:51:17.187: [INFO] OnDoneLoading sync enabled: 0
+2026-09-17 16:51:17.187: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-17 16:51:17.187: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-17 16:51:17.187: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 17:14:30.656: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 17:27:01.946: [INFO] CurrentProfilePath: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 17:27:01.946: [INFO] Profiles total count: 1
+2026-09-17 17:27:01.946: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 17:27:01.946: [INFO] LastUsedProfileDir: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 17:27:01.946: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 17:27:01.946: [INFO] OnDoneLoading sync enabled: 0
+2026-09-17 17:27:01.946: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-17 17:27:01.946: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-17 17:27:01.946: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 17:33:07.829: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 17:33:34.738: [INFO] CurrentProfilePath: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 17:33:34.738: [INFO] Profiles total count: 1
+2026-09-17 17:33:34.738: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 17:33:34.738: [INFO] LastUsedProfileDir: C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-17 17:33:34.738: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.castillero\Documents\GitHub\EntornoServidor\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-15T17:03:42.702Z
+2026-09-17 17:33:34.738: [INFO] OnDoneLoading sync enabled: 0
+2026-09-17 17:33:34.738: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-17 17:33:34.738: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-17 17:33:34.738: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-17 18:54:50.433: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

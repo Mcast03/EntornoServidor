@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="interfacesFuncionales.EntranCuatroSaleUno"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.lang.UnknownError"/>
+    <fullyQualifiedTypeName name="interfacesFuncionales.UnParametroString"/>
+    <fullyQualifiedTypeName name="interfacesFuncionales.ComparacionStrings"/>
+    <fullyQualifiedTypeName name="interfacesFuncionales.EntraEnteroSaleDecimal"/>
+    <fullyQualifiedTypeName name="interfacesFuncionales.EntraIntSaleInt"/>
+</qualifiedTypeNameHistroy>

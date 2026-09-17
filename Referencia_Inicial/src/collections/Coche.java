@@ -20,4 +20,9 @@ public class Coche {
 		this.marca = marca;
 		this.color = color;
 	}
+
+	@Override
+	public String toString() {
+		return "Coche: " + marca + " " + color;
+	}
 }
