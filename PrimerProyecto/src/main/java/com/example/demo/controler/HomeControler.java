@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeControler {
 	
 	@ModelAttribute(name="titulo")
-	public String m() {
+	public String title() {
 		return "Home things";
 	}
 	
