@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p th:if="${talleres == null || talleres.size == 0}">No hay talleres para mostrar</p>
+	<table th:unless="${talleres == null || talleres.size == 0}" border=1>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Nombre</th>
+				<th>Plazas</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="taller : ${talleres}">
+				<td>
+					<a th:href="@{'/taller/uno/' + ${taller.id}}"
+					th:text="${taller.id}"></a>
+				</td>
+				<td th:text="${taller.nombre}"></td>
+				<td th:text="${taller.plazas}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

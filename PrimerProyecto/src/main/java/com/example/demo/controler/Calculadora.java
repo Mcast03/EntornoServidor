@@ -15,5 +15,4 @@ public class Calculadora {
 	public String suma(@PathVariable Integer numero1, @PathVariable Integer numero2, @PathVariable String palabra) {
 		return "/calculadora/suma";
 	}
-	
 }
