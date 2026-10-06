@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Lista del tipo</h1>
+	<ul th:each="taller : ${tipo}">
+		<li>Id: <span th:text="${taller.id}"></span></li>
+		<li>Id: <span th:text="${taller.nombre}"></span></li>
+		<li>Id: <span th:text="${taller.plazas}"></span></li>
+		<li>Id: <span th:text="${taller.tipo}"></span></li>
+	</ul>
+	<a th:href="@{/taller/todos}">Ir a la lista completa</a>
+</body>
+</html>
