@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Esta es la biblioteca</h1>
+	
+	<table border=1>
+		<thead>
+			<td>Autor</td>
+			<td>Titulo</td>
+			<td>Numero de ejemplares</td>
+			<td>Genero</td>
+		</thead>
+		
+		<tr th:each="libro : ${libros}">
+			<td th:text="${libro.autor}"></td>
+			<td><a th:href="@{'/libros/id/'} + ${libro.id}" th:text="${libro.titulo}"></a></td>
+			<td th:text="${libro.numeroEjemplares}"></td>
+			<td><a th:href="@{'/libros/genero/'} + ${libro.genero}" th:text="${libro.genero}"></a></td>
+		</tr>
+	</table>
+</body>
+</html>

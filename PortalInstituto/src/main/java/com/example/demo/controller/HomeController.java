@@ -6,8 +6,11 @@ import java.util.Random;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping
 public class HomeController{
 	Random rm = new Random();
 	
@@ -29,15 +32,14 @@ public class HomeController{
 	
 	public String seleccionadorProvervio() {
 		Integer numero = rm.nextInt(9);
-		List<String> provervios = creadorDeProvervios();
-		return provervios[numero];
+		List <String> provervios = creadorDeProvervios();
+		return provervios.get(numero);
 	}
 	
-	
+	@GetMapping("/home") 
 	public String m(Model model) {
-		
-		//model.addAttribute("provervio", );
-		return "Home";
+		model.addAttribute("provervio", seleccionadorProvervio());
+		return "home";
 	}
 
 }

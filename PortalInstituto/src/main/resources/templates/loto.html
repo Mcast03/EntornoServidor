@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border=1>
+		<thead>
+			<td>Pais</td>
+			<td>Acceso</td>
+		</thead>
+		<tr th:each="pais : ${paises}">
+			<td th:text="${pais.nombre}"></td>
+			<td><a th:href="@{'/loto/genera/'} + ${pais.numBolas} + '/' + ${pais.numGanadores} + '/' + ${pais.nombre}">Ir a los premiados</a></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:if="${libro} == null">No hay ningun libro con ese titulo</h1>
+	
+	<table th:unless="${libro} == null" border=1>
+		<thead>
+			<td>Autor</td>
+			<td>Titulo</td>
+			<td>Numero de ejemplares</td>
+			<td>Genero</td>
+			<td>Id</td>
+		</thead>
+		<tr>
+			<td th:text="${libro.autor}"></td>
+			<td th:text="${libro.titulo}"></td>
+			<td th:text="${libro.numeroEjemplares}"></td>
+			<td th:text="${libro.genero}"></td>
+			<td th:text="${libro.id}"></td>
+		</tr>
+	</table>
+</body>
+</html>
