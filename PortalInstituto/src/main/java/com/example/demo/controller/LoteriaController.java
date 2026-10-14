@@ -53,6 +53,7 @@ public class LoteriaController {
 	@GetMapping("/genera/{max}/{cantidad}/{pais}")
 	public String boombo(Model model, @PathVariable Integer max, @PathVariable Integer cantidad, @PathVariable String pais) {
 		model.addAttribute("ganadores", numeroGanador(max, cantidad));
-		return "loto";
+		model.addAttribute("pais", pais);
+		return "ganadores";
 	}
 }
