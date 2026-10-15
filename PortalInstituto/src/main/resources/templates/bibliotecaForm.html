@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/libros/lista}" 
+	method="POST"
+	th:object="${libro}">
+		<input 
+		type="text" 
+		name="titulo" 
+		th:field="*{titulo}"
+		placeHolder="Introducir titulo ..."></br>
+		<input 
+		type="text" 
+		name="autor"
+		th:field="*{autor}"
+		placeHolder="Introducir autor ..."></br> 
+		<input 
+		type="number"
+		name="numeroEjemplares"
+		th:field="*{numeroEjemplares}" 
+		placeHolder="Introducir numero de ejemplares ..."></br> 
+		<input 
+		type="text" 
+		name="genero"
+		th:field="*{genero}" 
+		placeHolder="Introducir genero ..."></br>
+		<button>Enviar</button>
+	</form>
+</body>
+</html>

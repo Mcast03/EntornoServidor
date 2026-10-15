@@ -15,6 +15,8 @@ public class Libro {
 		this.id = id;
 	}
 	
+	public Libro() {}
+	
 	
 	//getters
 	public Integer getId() {
@@ -36,4 +38,32 @@ public class Libro {
 	public String getGenero() {
 		return genero;
 	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public void setNumeroEjemplares(Integer numeroEjemplares) {
+		this.numeroEjemplares = numeroEjemplares;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	@Override
+	public String toString() {
+		return "Libro [autor=" + autor + ", id=" + id + ", titulo=" + titulo + ", numeroEjemplares=" + numeroEjemplares
+				+ ", genero=" + genero + "]";
+	}
+	
+	
 }

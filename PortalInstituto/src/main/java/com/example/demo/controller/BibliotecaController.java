@@ -7,14 +7,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.demo.model.Libro;
 
 @Controller
 @RequestMapping("/libros")
 public class BibliotecaController {
-	
-	private List<Libro> generadorLibros(){
+
+	private static List<Libro> biblioteca = generadorLibros();
+
+	private static List<Libro> generadorLibros(){
 		List<Libro> libros = new ArrayList<>();
 		
 		libros.add(new Libro("Gabriel García Márquez", "Cien años de soledad", 5, "Novela",1));
@@ -32,8 +35,8 @@ public class BibliotecaController {
 	}
 	
 	@GetMapping("/lista")
-	public String m(Model model) {
-		model.addAttribute("libros", generadorLibros());
+	public String biblioteca(Model model) {
+		model.addAttribute("libros", biblioteca);
 		return "biblioteca";
 	}
 	
@@ -74,5 +77,36 @@ public class BibliotecaController {
 		
 		model.addAttribute("libros", filtroGenero(genero));
 		return "biblioteca";
+	}
+
+	@GetMapping("/formulario")
+	public String introducirLibro(Model model) {
+		model.addAttribute("libro", new Libro());
+		return "bibliotecaForm";
+	}
+	
+	public int numeroId() {
+	    int id = 1;
+	    while (existeId(id)) {
+	        id++;
+	    }
+	    return id;
+	}
+
+	private boolean existeId(int id) {
+	    for (Libro libro : biblioteca) {
+	        if (libro.getId() == id) {
+	            return true;
+	        }
+	    }
+	    return false;
+	}
+	
+	@PostMapping("/lista")
+	public String obtenerLibro(Model model, Libro libro) {
+		libro.setId(numeroId());
+		biblioteca.add(libro);
+		System.out.println(libro);
+		return "redirect:/libros/lista";
 	}
 }
