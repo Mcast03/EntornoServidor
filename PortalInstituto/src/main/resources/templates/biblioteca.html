@@ -21,7 +21,7 @@
 			<td><a th:href="@{'/libros/id/'} + ${libro.id}" th:text="${libro.titulo}"></a></td>
 			<td th:text="${libro.numeroEjemplares}"></td>
 			<td><a th:href="@{'/libros/genero/'} + ${libro.genero}" th:text="${libro.genero}"></a></td>
-			<td> <button>Borrar</button> <button>Editar</button></td>
+			<td> <a th:href="@{'/libros/borrar/id/'} + ${libro.id}">Borrar</a> <a th:href="@{/libros/formulario/id/} + ${libro.id}">Editar</a></td>
 		</tr>
 	</table>
 	<a th:href="@{/libros/lista}">Volver a la biblioteca</a></br>
