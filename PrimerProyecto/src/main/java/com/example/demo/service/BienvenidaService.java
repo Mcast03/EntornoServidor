@@ -3,7 +3,7 @@ package com.example.demo.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BienvenidaService {
+public class BienvenidaService  implements IBienvenidaService{
 	public String dimeHola() {
 		return "Hola";
 	}

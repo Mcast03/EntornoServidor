@@ -16,10 +16,12 @@
     <fullyQualifiedTypeName name="com.example.demo.model.Persona"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonCreator.Mode"/>
     <fullyQualifiedTypeName name="com.example.demo.controler.BienvenidaController"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.example.demo.service.IBienvenidaService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
 </qualifiedTypeNameHistroy>
