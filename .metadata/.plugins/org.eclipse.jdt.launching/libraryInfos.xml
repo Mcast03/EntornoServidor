@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="/usr/lib/jvm/java-25-openjdk-amd64" version="25.0.5"/>
     <libraryInfo home="C:\Program Files\Java\jre1.8.0_503" version="1.8.0_503">
         <bootpath>
             <entry path="C:\Program Files\Java\jre1.8.0_503\lib\resources.jar"/>
@@ -30,6 +31,8 @@
         </endorsedDirs>
     </libraryInfo>
     <libraryInfo home="C:\Program Files\Eclipse IDE\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre" version="21.0.10"/>
+    <libraryInfo home="/home/perseus/Descargas/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_25.0.4.v20260826-0822/jre" version="25.0.4.1"/>
+    <libraryInfo home="/usr/lib/jvm/java-21-openjdk-amd64" version="21.0.13"/>
     <libraryInfo home="C:\Program Files\Java\jre1.8.0_491" version="1.8.0_491">
         <bootpath>
             <entry path="C:\Program Files\Java\jre1.8.0_491\lib\resources.jar"/>
@@ -46,6 +49,17 @@
         </extensionDirs>
         <endorsedDirs>
             <entry path="C:\Program Files\Java\jre1.8.0_491\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="/home/perseus/Descargas/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_25.0.4.v20260826-0822" version="25.0.4.1">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
         </endorsedDirs>
     </libraryInfo>
 </libraryInfos>
