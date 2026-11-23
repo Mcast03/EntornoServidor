@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text="${libro.titulo}"></h1>
+	
+	<ul>
+		<li th:text="|Autor: ${libro.autor}|"></li>
+		<li th:text="|Anio: ${libro.anio}|"></li>
+		<li th:text="${libro.paginas}>600? 'Lectura larga':'Paginas: '+${libro.paginas}"></li>
+		<li th:text="|Genero: ${libro.genero}"></li>
+		<li th:if="${libro.disponible}" th:text="|Libro disponible|"></li>
+	</ul>
+</body>
+</html>

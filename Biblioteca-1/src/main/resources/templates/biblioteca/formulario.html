@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Crear Libro</h1>
+	
+	<form th:action="@{/biblioteca/guardar}"
+	th:object="${libro}"
+	method="post">
+		<input th:field="*{id}" hidden/>
+		<label>Titulo
+			<input th:field="*{titulo}" type="text"/>
+		</label><br/>
+		<label>Paginas
+			<input th:field="*{paginas}" type="text"/>
+		</label><br/>
+		<label>Autor
+			<input th:field="*{autor}" type="text"/>
+		</label><br/>
+		<label>Anio
+			<input th:field="*{anio}" type="number"/>
+		</label><br/>
+		<label>Disponible
+			<input type="checkbox"/>
+		</label><br/>
+		<label>Genero
+			<select th:field="*{genero}">
+				<option th:each="g : ${generos}"
+				value="${g}"
+				th:text="${g}">genero
+				</option>
+			</select>
+		</label>
+		<button type="submit">Guardar</button>
+	</form>
+</body>
+</html>

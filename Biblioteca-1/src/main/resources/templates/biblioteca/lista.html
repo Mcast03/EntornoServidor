@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Libros Accesibles</h1>
+	<table border="1px">
+		<thead>
+			<tr>
+				<th>Titulo</th>
+				<th>Autor</th>
+				<th>Anio</th>
+				<th>Genero</th>
+				<th>Disponible</th>
+				<th colspan="3">Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="libro : ${libros}">
+				<td th:text="${libro.titulo}"></td>
+				<td th:text="${libro.autor}"></td>
+				<td th:text="${libro.anio}"></td>
+				<td th:text="${libro.genero}"></td>
+				<td th:text="${libro.disponible}? 'Disponible':'No disponible'"></td>
+				<td>
+					<form th:action="@{/biblioteca/ficha/{id} (id = ${libro.id})}">
+						<button type="submit">Ver</button>
+					</form>
+				</td>
+				<td>
+					<form>
+						<button type="submit">Editar</button>
+					</form>
+				</td>
+				<td>
+					<form th:action="@{/biblioteca/borrar/{id} (id = ${libro.id})}"
+						method="post">
+						<button type="submit">Borrar</button>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<form th:action="@{/biblioteca/crear}">
+		<button type="submit">Anadir nuevo</button>
+	</form>
+</body>
+</html>

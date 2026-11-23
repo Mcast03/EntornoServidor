@@ -1,0 +1,15 @@
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Cien años de soledad', 'Gabriel García Márquez', 1967, 471, true, 'NOVELA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Ensayo sobre la ceguera', 'José Saramago', 1995, 439, false, 'ENSAYO');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Romancero gitano', 'Federico García Lorca', 1928, 110, true, 'POESIA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('El Señor de los Anillos', 'J.R.R. Tolkien', 1954, 1178, false, 'FANTASIA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Breve historia del tiempo', 'Stephen Hawking', 1988, 256, true, 'CIENCIA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Sapiens: De animales a dioses', 'Yuval Noah Harari', 2011, 496, true, 'HISTORIA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('La sombra del viento', 'Carlos Ruiz Zafón', 2001, 575, false, 'NOVELA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('El mundo y sus demonios', 'Carl Sagan', 1995, 493, false, 'CIENCIA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Los detectives salvajes', 'Roberto Bolaño', 1998, 648, true, 'NOVELA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('El lobo estepario', 'Hermann Hesse', 1927, 237, true, 'FANTASIA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Las flores del mal', 'Charles Baudelaire', 1857, 400, false, 'POESIA');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('El hombre en busca de sentido', 'Viktor Frankl', 1946, 200, true, 'ENSAYO');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('La tabla rasa', 'Steven Pinker', 2002, 509, false, 'ENSAYO');
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Yo, robot', 'Isaac Asimov', 1950, 374, true, 'CIENCIA'); 
+INSERT INTO Libro (titulo, autor, anio, paginas, disponible, genero) VALUES ('Guns, Germs, and Steel', 'Jared Diamond', 1997, 498, true, 'HISTORIA');
