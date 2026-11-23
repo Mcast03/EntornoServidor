@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Lista de Juego</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}" />
+</head>
+<header th:replace="~{fragmentos/comun::cabecera}">Cabecera</header>
+<body>
+	<h1>Lista de Peliculas</h1>
+	<form th:action="@{/videojuego/lista}" method="get">
+		<label>Plataforma <select th:selected="${plataforma}" name=plataforma>
+				<option value="">Elige una Plataforma</option>
+				<option th:each="p : ${plataforma}" th:value="${p}" th:text="${p}">Plataforma</option>
+		</select></label>
+		<label>En oferta <input type="checkbox" th:checked="${enOferta}" name=enOferta value="true"/></label>
+		<button type="submit">Filtrar</button>
+	</form>
+	<table border=1px th:if="#{lists.isEmpty(videojuego)}">
+		<thead>
+			<tr>
+				<td>Titulo</td>
+				<td>ID</td>
+				<td>Anio</td>
+				<td>Copias Vendidas</td>
+				<td>En Oferta</td>
+				<td>Plataforma</td>
+				<td>Acciones</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="juego:${videojuego}">
+				<td><a th:text="${juego.titulo}"
+					th:href="@{/videojuego/ficha/{id} (id = ${juego.id})}"></a></td>
+				<td th:text="${juego.id}"></td>
+				<td th:text="${juego.anio}"></td>
+				<td th:text="${juego.copiasVendidas}"></td>
+				<td th:text="${juego.enOferta}? 'Si':'No'"></td>
+				<td th:text="${juego.plataforma}"></td>
+				<td><form
+						th:action="@{/videojuego/borrar/{id} (id = ${juego.id})}"
+						method="post">
+						<button type="submit">Borrar</button>
+					</form></td>
+				<td><form
+						th:action="@{/videojuego/editar/{id} (id = ${juego.id})}">
+						<button type="submit">Editar</button>
+					</form></td>
+			</tr>
+		</tbody>
+	</table>
+	<form th:action="@{/videojuego/nuevo}">
+		<button type="submit">Nuevo juego</button>
+	</form>
+	
+	<h2 th:unless="#{lists.isEmpty(videojuego)}">No hay ningun juego de con estas caracteristicas</h2>
+</body>
+</html>

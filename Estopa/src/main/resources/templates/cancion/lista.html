@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+</head>
+<body>
+	<h1>Canciones Estopa</h1>
+	<form th:action="@{/estopa/lista}" method="get">
+		<label>Estilo
+			<select name="estilo">
+				<option value="">Elige un Estilo</option>
+				<option th:each="e : ${estilo}"
+				th:value="${e}"
+				th:text="${e}"
+				>Estilo</option>
+			</select>
+		</label>
+		<label>Single
+			<input type="checkbox" name="single"/>
+		</label>
+		<button type="submit">Filtrar</button>
+	</form>
+	<table border=1px>
+		<thead>
+			<tr>
+				<th>Tutulo</th>
+				<th>Album</th>
+				<th>Anio</th>
+				<th>Estilo</th>
+				<th>Reproducciones</th>
+				<th>Sencillo</th>
+				<th colspan="3">Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="cancion : ${canciones}">
+				<td th:text="${cancion.titulo}"></td>
+				<td th:text="${cancion.album}"></td>
+				<td th:text="${cancion.anio}"></td>
+				<td th:text="${cancion.estilo}"></td>
+				<td th:text="|${cancion.reproducciones} millones|"></td>
+				<td th:text="${cancion.single}? 'Si':'No'"></td>
+				<td>
+					<form th:action="@{/estopa/ficha/{id} (id=${cancion.id})}">
+						<button>Ver</button>
+					</form>
+				</td>
+				<td>
+					<form th:action="@{/estopa/editar/{id} (id=${cancion.id})}">
+						<button>Editar</button>
+					</form>
+				</td>
+				<td>
+					<form th:action="@{/estopa/borrar/{id} (id=${cancion.id})}" method="post">
+						<button>Borrar</button>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<form th:action="@{/estopa/nueva}">
+		<button type="submit">Nueva Cancion</button>
+	</form>
+</body>
+</html>

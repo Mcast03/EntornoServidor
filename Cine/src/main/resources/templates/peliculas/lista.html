@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Peliculas del Cine</title>
+</head>
+<body>
+	<h1>Peliculas del Cine</h1>
+	<table border=1px>
+		<thead>
+			<tr>
+				<td>Titulo</td>
+				<td>Anio</td>
+				<td>Genero</td>
+				<td>Recaudacion</td>
+				<td>Cartelera</td>
+				<td colspan="2">Acciones</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="pelicula : ${peliculas}">
+				<td><a th:href="@{/peliculas/{id}(id=${pelicula.id})}"
+					th:text="${pelicula.titulo}"></a></td>
+				<td th:text="${pelicula.anio}"></td>
+				<td th:text="${pelicula.genero}"></td>
+				<td th:text="${pelicula.recaudacion}"></td>
+				<td th:text="${pelicula.enCartelera}?'Si':'No'"></td>
+				<td><form
+						th:action="@{/peliculas/editar/{id}(id=${pelicula.id})}">
+						<button type="submit">Editar</button>
+					</form></td>
+				<td><form
+						th:action="@{/peliculas/borrar/{id}(id=${pelicula.id})}"
+						method="post">
+						<button type="submit">Borrar</button>
+					</form></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

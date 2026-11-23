@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title th:text="${cancion.id==0}? 'Nueva Cancion':'Editar Cancion'"></title>
+<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+</head>
+<body>
+	<h1 th:text="${cancion.id==0}? 'Nueva Pelicula':'Editar Pelicula'"></h1>
+	<form th:action="@{/estopa/guardar}" 
+	method="post"
+	th:object="${cancion}">
+		<input th:field="*{id}" type="text" hidden/>
+		<label>Titulo: 
+			<input th:field="*{titulo}" type="text"/>
+			<span th:if="${#fields.hasErrors('titulo')}"
+			th:errors="*{titulo}"></span>
+		</label><br/>
+		<label>Album:
+			<input th:field="*{album}" type="text"/>
+			<span th:if="${#fields.hasErrors('album')}"
+			th:errors="*{album}"></span>
+		</label><br/>
+		<label>Anio:
+			<input th:field="*{anio}" type="number"/>
+			<span th:if="${#fields.hasErrors('anio')}"
+			th:errors="*{anio}"></span>
+		</label><br/>
+		<label>Duracion en segundos:
+			<input th:field="*{duracionSegundos}" type="number"/>
+			<span th:if="${#fields.hasErrors('duracionSegundos')}"
+			th:errors="*{duracionSegundos}"></span>
+		</label><br/>
+		<label>Reproducciones:
+			<input th:field="*{reproducciones}" type="number"/>
+			<span th:if="${#fields.hasErrors('reproducciones')}"
+			th:errors="*{reproducciones}"></span>
+		</label><br/>
+		<label>Single 
+			<input th:field="*{single}" type="checkbox"/>
+		</label><br/>
+		<label>Estilo
+			<select th:field="*{estilo}">
+				<option value="">Elige un Estilo</option>
+				<option th:each="e : ${estilo}"
+				th:value="${e}"
+				th:text="${e}"
+				>
+				</option>
+			</select>
+			<span th:if="${#fields.hasErrors('estilo')}"
+			th:errors="*{estilo}"></span>
+		</label><br/>
+		<button type="submit">Guardar</button>
+	</form>
+</body>
+</html>

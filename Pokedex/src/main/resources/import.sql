@@ -1,0 +1,12 @@
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Charizard', 6, 50, 90.5, false, 'FUEGO');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Blastoise', 9, 48, 85.5, false, 'AGUA');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Venusaur', 3, 45, 100.0, false, 'PLANTA');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Pikachu', 25, 30, 6.0, false, 'ELECTRICO');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Mewtwo', 150, 70, 122.0, true, 'PSIQUICO');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Mew', 151, 60, 4.0, true, 'PSIQUICO');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Snorlax', 143, 55, 460.0, false, 'NORMAL');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Eevee', 133, 20, 6.5, false, 'NORMAL');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Squirtle', 7, 15, 9.0, false, 'AGUA');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Zapdos', 145, 65, 52.6, true, 'ELECTRICO');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Charmander', 4, 12, 8.5, false, 'FUEGO');
+INSERT INTO pokemon (nombre, numero_pokedex, nivel, peso, legendario, tipo) VALUES ('Bulbasaur', 1, 10, 6.9, false, 'PLANTA');
