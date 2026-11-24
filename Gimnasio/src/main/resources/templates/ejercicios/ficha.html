@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text="${ejercicio.nombre}"></h1>
+	<ul>
+		<li th:text="|Nombre: ${ejercicio.nombre}|"></li>
+		<li th:text="|Series: ${ejercicio.series}|"></li>
+		<li th:text="|Repeticiones: ${ejercicio.repeticiones}|"></li>
+		<li th:text="${ejercicio.peso}==0? 'Sin peso':'Peso: '+ ${ejercicio.peso} +'kg'"></li>
+		<li th:if="${ejercicio.conMaquina}">Requiere Maquina</li>
+		<li th:text="|Grupo: ${ejercicio.grupo}|"></li>
+	</ul>
+</body>
+</html>

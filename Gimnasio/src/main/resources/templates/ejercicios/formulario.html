@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title th:text="${ejercicio.id}==0? 'Crear Ejercicio':'Editar Ejercicio'"></title>
+</head>
+<body>
+	<h1 th:text="${ejercicio.id}==0? 'Crear Ejercicio':'Editar Ejercicio'"></h1>
+	<form th:action="@{/gimnasio/guardar}"
+	method="post"
+	th:object="${ejercicio}">
+		<input type="text" th:field="*{id}" hidden/>
+		<label>Nombre
+			<input type="text" th:field="*{nombre}"/>
+			<span th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></span>
+		</label><br/>
+		<label>Series
+			<input type="number" th:field="*{series}"/>
+			<span th:if="${#fields.hasErrors('series')}" th:errors="*{series}"></span>
+		</label><br/>
+		<label>Repeticiones
+			<input type="number" th:field="*{repeticiones}"/>
+			<span th:if="${#fields.hasErrors('repeticiones')}" th:errors="*{repeticiones}"></span>
+		</label><br/>
+		<label>Peso
+			<input type="number" th:field="*{peso}"/>
+			<span th:if="${#fields.hasErrors('peso')}" th:errors="*{peso}"></span>
+		</label><br/>
+		<label>Con Maquina
+			<input type="checkbox" th:field="*{conMaquina}"/>
+		</label><br/>
+		<label>Grupo
+			<select th:field="*{grupo}">
+				<option value="">Elige una opcion</option>
+				<option th:each="g : ${grupo}"
+				th:value="${g}"
+				th:text="${g}">
+				</option>
+			</select>
+			<span th:if="${#fields.hasErrors('grupo')}" th:errors="*{grupo}"></span>
+		</label><br/>
+		<button type="submit">Guardar Cambios</button>
+	</form>
+</body>
+</html>

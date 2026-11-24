@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.example.biblioteca.model.Genero;
 import com.example.biblioteca.model.Libro;
 import com.example.biblioteca.repository.LibroRepository;
 
@@ -40,6 +41,23 @@ public class LibroDisponibleServiceImpl implements ILibroService{
 	public void save(Libro libro) {
 		libroRepository.save(libro);
 		
+	}
+
+	@Override
+	public List<Libro> filtrarByGeneroAndDisponible(Genero genero, boolean disponible) {
+		if(genero==null && !disponible) {
+			return libroRepository.findAll();
+		}
+		
+		if(genero==null) {
+			return libroRepository.disponibleTrue();
+		}
+		
+		if(!disponible) {
+			return libroRepository.getByGenero(genero);
+		}
+		
+		return libroRepository.getByGeneroAndDisponibleTrue(genero);
 	}
 
 }

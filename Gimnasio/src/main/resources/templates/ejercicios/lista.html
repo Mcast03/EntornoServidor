@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/gimnasio/lista}"
+	method="get"
+	>
+		<label>Grupo
+			<select name="grupo">
+				<option value="">Elige una opcion</option>
+				<option th:each="g : ${grupos}"
+				th:value="${g}"
+				th:text="${g}">Grupo
+				</option>
+			</select>
+		</label>
+		<label>En maquina
+			<input type="checkbox" name="maquina">
+		</label>
+		<button type="submit">Filtrar</button>
+	</form>
+
+	<table border=1px th:unless="${#lists.isEmpty(ejercicios)}">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Grupo</th>
+				<th>Series</th>
+				<th>Repeticiones</th>
+				<th>Peso</th>
+				<th colspan="3">Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="ejercicio : ${ejercicios}">
+				<td th:text="${ejercicio.nombre}"></td>
+				<td th:text="${ejercicio.grupo}"></td>
+				<td th:text="${ejercicio.series}"></td>
+				<td th:text="${ejercicio.repeticiones}"></td>
+				<td th:text="${ejercicio.peso}"></td>
+				<td>
+					<form th:action="@{/gimnasio/ficha/{id} (id=${ejercicio.id})}">
+						<button type="submit">Ver</button>
+					</form>
+				</td>
+				<td>
+					<form th:action="@{/gimnasio/borrar/{id} (id=${ejercicio.id})}" method="post">
+						<button>Borrar</button>
+					</form>
+				</td>
+				<td>
+					<form th:action="@{/gimnasio/editar/{id} (id=${ejercicio.id})}">
+						<button type="submit">Editar</button>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<form th:action="@{/gimnasio/crear}" th:unless="${#lists.isEmpty(ejercicios)}">
+		<button type="submit">Nuevo Ejercicio</button>
+	</form>
+	
+	<h1 th:if="${#lists.isEmpty(ejercicios)}">No hay ningun ejercicio con esas especificaciones</h1>
+</body>
+</html>

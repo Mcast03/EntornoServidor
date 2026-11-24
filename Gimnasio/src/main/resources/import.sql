@@ -1,0 +1,18 @@
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Press banca', 4, 8, 60.0, false, 'PECHO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Aperturas en peck deck', 3, 12, 35.0, true, 'PECHO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Flexiones', 3, 20, 0, false, 'PECHO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Dominadas', 4, 8, 0, false, 'ESPALDA');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Remo con barra', 4, 10, 50.0, false, 'ESPALDA');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Jalón al pecho', 3, 12, 45.0, true, 'ESPALDA');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Sentadilla', 4, 8, 80.0, false, 'PIERNA');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Prensa de piernas', 4, 12, 120.0, true, 'PIERNA');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Extensión de cuádriceps', 3, 15, 40.0, true, 'PIERNA');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Curl de bíceps', 3, 12, 12.5, false, 'BRAZO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Fondos en paralelas', 3, 10, 0, false, 'BRAZO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Press francés', 3, 12, 25.0, false, 'BRAZO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Press militar', 4, 8, 40.0, false, 'HOMBRO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Elevaciones laterales', 3, 15, 8.0, false, 'HOMBRO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Press de hombro en máquina', 3, 12, 30.0, true, 'HOMBRO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Cinta de correr', 1, 30, 0, true, 'CARDIO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Bicicleta estática', 1, 20, 0, true, 'CARDIO');
+INSERT INTO ejercicio (nombre, series, repeticiones, peso, con_maquina, grupo) VALUES ('Comba', 5, 50, 0, false, 'CARDIO');
