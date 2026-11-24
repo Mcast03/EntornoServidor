@@ -6,18 +6,29 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class Libro {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@NotEmpty @Size(min=2,max=100)
 	private String titulo;
+	@NotEmpty
 	private String autor;
+	@Min(1500)@Max(2026)
 	private int anio;
+	@Positive
 	private int paginas;
 	private boolean disponible;
-	@Enumerated(EnumType.STRING)
+	@Enumerated(EnumType.STRING) @NotNull
 	private Genero genero;
 	public int getId() {
 		return id;

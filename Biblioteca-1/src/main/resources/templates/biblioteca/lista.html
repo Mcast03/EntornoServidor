@@ -3,9 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/css/estilo.css">
 </head>
 <body>
 	<h1>Libros Accesibles</h1>
+	<form th:action="@{/biblioteca/lista}" method="get">
+		<label>Disponible
+			<input type="checkbox" name="disponible"/>
+		</label>
+		<label>Genero
+			<select th:value="${genero}" name="genero">
+				<option value="">Elige un genero</option>
+				<option th:each="g : ${genero}"
+				th:value="${g}"
+				th:text="${g}">Genero
+				</option>
+			</select>
+		</label>
+		<button type="submit">Filtrar</button>
+	</form>
 	<table border="1px">
 		<thead>
 			<tr>
@@ -30,7 +46,7 @@
 					</form>
 				</td>
 				<td>
-					<form>
+					<form th:action="@{/biblioteca/editar/{id} (id = ${libro.id})}">
 						<button type="submit">Editar</button>
 					</form>
 				</td>
