@@ -1,0 +1,18 @@
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Seat', 'Ibiza', 2019, 11500.0, 85000, false, 'GASOLINA');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Volkswagen', 'Golf', 2018, 14900.0, 112000, false, 'DIESEL');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Toyota', 'Corolla', 2022, 24500.0, 38000, false, 'HIBRIDO');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Renault', 'Clio', 2026, 17900.0, 0, true, 'GASOLINA');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Tesla', 'Model 3', 2025, 42990.0, 0, true, 'ELECTRICO');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Peugeot', 'e-208', 2021, 15800.0, 54000, false, 'ELECTRICO');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('BMW', 'Serie 3', 2020, 32500.0, 76000, false, 'DIESEL');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Audi', 'A4', 2017, 19900.0, 138000, false, 'DIESEL');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Ford', 'Focus', 2016, 8500.0, 145000, false, 'GASOLINA');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Hyundai', 'Kona', 2026, 31900.0, 0, true, 'HIBRIDO');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Mercedes', 'Clase C', 2024, 47900.0, 12000, false, 'GASOLINA');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Kia', 'Niro', 2023, 28900.0, 21000, false, 'HIBRIDO');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Nissan', 'Leaf', 2020, 13900.0, 62000, false, 'ELECTRICO');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Opel', 'Corsa', 2026, 16500.0, 0, true, 'GASOLINA');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Volvo', 'XC60', 2025, 58900.0, 0, true, 'HIBRIDO');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Skoda', 'Octavia', 2015, 9800.0, 168000, false, 'DIESEL');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Dacia', 'Sandero', 2022, 12900.0, 29000, false, 'GASOLINA');
+INSERT INTO coche (marca, modelo, anio, precio, kilometros, nuevo, combustible) VALUES ('Mini', 'Cooper', 2023, 26800.0, 18000, false, 'GASOLINA');

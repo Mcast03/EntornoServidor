@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title th:text="${coche.id}==0? 'Crear coche':'Editar coche'"></title>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+</head>
+<body>
+	<h1 th:text="${coche.id}==0? 'Crear coche':'Editar coche'"></h1>
+	<form th:action="@{/concesionario/guardar}"
+	th:object= "${coche}"
+	method="post">
+		<input th:field="*{id}" hidden/>
+		<label>Marca
+			<input th:field="*{marca}" type="text"/>
+			<span th:if="${#fields.hasErrors('marca')}" th:errors="*{marca}"></span>		
+		</label><br/>
+		<label>Modelo
+			<input th:field="*{modelo}" type="text"/>
+			<span th:if="${#fields.hasErrors('modelo')}" th:errors="*{modelo}"></span>		
+		</label><br/>
+		<label>Anio
+			<input th:field="*{anio}" type="number"/>		
+			<span th:if="${#fields.hasErrors('anio')}" th:errors="*{anio}"></span>		
+		</label><br/>
+		<label>Precio
+			<input th:field="*{precio}" type="number"/>		
+			<span th:if="${#fields.hasErrors('precio')}" th:errors="*{precio}"></span>		
+		</label><br/>
+		<label>Kilometros
+			<input th:field="*{kilometros}" type="number"/>		
+			<span th:if="${#fields.hasErrors('kilometros')}" th:errors="*{kilometros}"></span>		
+		</label><br/>
+		<label>Nuevo
+			<input th:field="*{nuevo}" type="checkbox"/>
+		</label><br/>
+		<label>Tipo de combustible
+			<select th:field="*{combustible}">
+				<option value="">Elige un Combustible</option>
+				<option th:each="c : ${combustible}"
+				th:value="${c}"
+				th:text="${c}">
+				</option>
+			</select>
+			<span th:if="${#fields.hasErrors('combustible')}" th:errors="*{combustible}"></span>		
+		</label><br/>
+	<button type="submit">Guardar</button>
+	</form>
+</body>
+</html>

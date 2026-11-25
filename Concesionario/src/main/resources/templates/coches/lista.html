@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+</head>
+<body>
+
+	<h1>Lista de Coches</h1>
+	<form th:action="@{/concesionario/lista}"
+	method="get">
+		<label>Precio maximo
+			<input type="number" name="precio"/>
+		</label>
+		<label>Tipo de combustible
+			<select name="combustible">
+				<option value="">Elige un Combustible</option>
+				<option th:each="c : ${combustible}"
+				th:value="${c}"
+				th:text="${c}">Contenido
+				</option>
+			</select>
+		</label>
+		<button type="submit">Filtro</button>
+	</form>
+	<table border=1px>
+		<thead>
+			<tr>
+				<th>Marca</th>
+				<th>Modelo</th>
+				<th>Anio</th>
+				<th>Precio</th>
+				<th>Kilometros</th>
+				<th>Combustible</th>
+				<th colspan="3">Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each=" coche : ${coches}">
+				<td th:text="${coche.marca}"></td>
+				<td th:text="${coche.modelo}"></td>
+				<td th:text="${coche.anio}"></td>
+				<td th:text="${coche.precio}"></td>
+				<td th:text="${coche.kilometros}"></td>
+				<td th:text="${coche.combustible}"></td>
+				<td>
+					<form th:action="@{/concesionario/ficha/{id} (id=${coche.id})}">
+						<button type="submit">Ver</button>
+					</form>
+				</td>
+				<td>
+					<form th:action="@{/concesionario/editar/{id} (id=${coche.id})}">
+						<button>Editar</button>
+					</form>
+				</td>
+				<td>
+					<form th:action="@{/concesionario/borrar/{id} (id=${coche.id})}" method="post">
+						<button type="submit">Borrar</button>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<form th:action="@{/concesionario/crear}">
+		<button type="submit">Nuevo coche</button>
+	</form>
+</body>
+</html>

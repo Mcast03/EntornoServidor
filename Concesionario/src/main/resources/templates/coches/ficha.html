@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+</head>
+<body>
+	<h1 th:text="${coche.marca}"></h1>
+	<h2 th:if="${coche.nuevo}">NUEVO!!!</h2>
+	
+	<ul>
+		<li th:text="|Modelo: ${coche.modelo}|"></li>
+		<li th:unless="${coche.nuevo}" th:text="|Kilometros: ${coche.kilometros}|"></li>
+		<li th:text="|Anio: ${coche.anio}|"></li>
+		<li th:text="${coche.precio}>40000? 'Gama Alta':'Precio: ' + ${coche.precio}"></li>
+		<li th:text="|Combustible: ${coche.combustible}">
+	</ul>
+</body>
+</html>
